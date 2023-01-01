@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Game Of 8 Puzzle </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  </head>
+  <body>
+    <center>
+
+      <div class="w3-display-middle" id="curtains">
+        <center>
+             <div class="sk-cube-grid">
+              <div class="sk-cube1 sk-cube"></div>
+              <div class="sk-cube2 sk-cube"></div>
+              <div class="sk-cube4 sk-cube"></div>
+              <div class="sk-cube3 sk-cube"></div>
+            </div>
+        </center>
+      </div>
+        <div class="w3-padding-32 w3-red w3-circle w3-center">
+        <h1>Game Of 8 Puzzle </h1>
+        </div>
+
+
+      <div  id="sec1"></div>
+        <div class="w3-margin w3-padding-64 w3-left">
+
+             <div class="w3-container w3-red w3-cell">
+               <h1> The First State </h1>
+               <input id="in" type="text" class="w3-input w3-hover-gray w3-xlarge" value="1,2,3,0,5,6,4,7,8" name="grid" placeholder="Ex. 1,4,2,3,0,5,6,7,8">
+          </div>
+
+
+
+         <div class="w3-container w3-green w3-cell">
+               <h1> The end State </h1>
+
+               <input id="end"  class="w3-input w3-hover-gray w3-xlarge" type="text" name="grid" placeholder="Ex. 1,4,2,3,0,5,6,7,8">
+        </div>
+            <button class="w3-hide " id="sel" value="astarM">A* - Manhattan Distance</button>
+            <button class="w3-button w3-padding-large w3-margin-top w3-green w3-border w3-border-red w3-round-large w3-xxlarge"" id="btn">Solve</button>
+
+
+        </div>
+
+
+      <div  id="sec2">
+        <label   class="w3-hide" id="bb">Solving state: <span id="code"></span></label>
+
+
+        <div  class="w3-margin-left w3-padding-64 w3-left">
+
+    <table   id="table">
+          <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+        </table>
+        </div>
+      </div>
+<div  class="w3-margin-left w3-padding-64 w3-left">
+
+<div class="demo w3-panel w3-border w3-round-large">
+    <h1><p> Solving Steps :</p></h1>
+  <h3><p id="demo2"></p></h3>
+</div>
+
+
+
+    </div>
+    </center>
+
+    <footer class="w3-display-bottommiddle">
+      <center>
+        <h1><p>
+        Made by:   Khaled_135930 	• Raghad_112359	•   Muhanad_134350<p></h1>
+      </center>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    {% load static %}
+    <script type="text/javascript" src="{% static "script.js" %}"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+Actions : ['Right']
+Cost : 1
+Nodes Expanded : 1
+Depth : 1
+Runtime : 0.0
